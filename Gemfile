@@ -33,6 +33,5 @@ end
 group :test do
   gem 'capybara'
   gem 'database_cleaner'
-  gem 'minitest'
   gem 'shoulda-matchers'
 end
