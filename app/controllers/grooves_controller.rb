@@ -1,0 +1,2 @@
+class GroovesController < ApplicationController
+end
