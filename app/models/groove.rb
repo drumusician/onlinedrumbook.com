@@ -1,2 +1,3 @@
-class Groove < ActiveRecord::Base
+class Groove < LessonContent
+
 end
