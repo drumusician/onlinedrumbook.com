@@ -1,2 +1,2 @@
-class Fill < ActiveRecord::Base
+class Fill < LessonContent
 end
