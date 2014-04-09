@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :fills
+
   resources :grooves
 
   resources :lesson_contents
