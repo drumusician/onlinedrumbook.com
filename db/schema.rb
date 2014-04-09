@@ -11,9 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20140409210851) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "lesson_contents", force: true do |t|
+    t.string   "image"
+    t.string   "note_values"
+    t.string   "length"
+    t.string   "audio"
+    t.string   "video"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "type"
+  end
 
 end
