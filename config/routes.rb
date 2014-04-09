@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :techniques
+
   resources :fills
 
   resources :grooves
