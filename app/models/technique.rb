@@ -1,2 +1,2 @@
-class Technique < ActiveRecord::Base
+class Technique < LessonContent
 end
