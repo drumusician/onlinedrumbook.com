@@ -1,3 +1,2 @@
 class Groove < LessonContent
-
 end
