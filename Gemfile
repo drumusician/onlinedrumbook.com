@@ -17,7 +17,7 @@ gem 'simple_form'
 gem 'foundation-rails'
 gem 'rails_layout'
 gem "paperclip", "~> 4.1"
-
+gem "skylight"
 group :development do
 gem 'spring'
 #gem 'foreman'
