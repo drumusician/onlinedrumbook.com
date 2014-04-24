@@ -8,7 +8,13 @@ class GroovesController < ApplicationController
   end
 
   def create
-    @groove = Groove.new(params[:id])
+    @groove = Groove.new( groove_params )
     redirect_to root_path
+  end
+
+  private
+
+  def groove_params
+    params.require(:groove).permit(:all)
   end
 end
