@@ -1,4 +1,4 @@
 class NoteValues < ActiveRecord::Base
-  belongs_to :groove
-  belongs_to :lesson_content
+  has_and_belongs_to_many :grooves
+  has_and_belongs_to_many :lesson_contents
 end
