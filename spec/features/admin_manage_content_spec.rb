@@ -2,9 +2,6 @@ require 'spec_helper'
 
 feature "manage content" do
 
-  before do
-    login_user(admin)
-  end
 
   scenario "create new groove content" do
     visit '/'

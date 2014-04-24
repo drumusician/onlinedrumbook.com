@@ -1,0 +1,9 @@
+<h2>Add a new groove below</h2>
+<%= simple_form_for @groove do |groove| %>
+  <%= groove.input :image %>
+  <%= groove.input :length %>
+  <%= groove.input :audio %>
+  <%= groove.input :video %>
+  <%= groove.button :submit %>
+<% end %>
+
