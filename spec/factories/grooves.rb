@@ -1,6 +1,7 @@
 # Read about factories at https://github.com/thoughtbot/factory_girl
 
 FactoryGirl.define do
-  factory :groofe, :class => 'Groove' do
+  factory :groove, :class => 'Groove' do
+    association :note_value
   end
 end
