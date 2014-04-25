@@ -1,3 +1,3 @@
 class LessonContent < ActiveRecord::Base
-  has_many :note_values
+  has_and_belongs_to_many :note_values
 end
