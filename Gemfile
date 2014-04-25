@@ -18,6 +18,7 @@ gem 'foundation-rails'
 gem 'rails_layout'
 gem "paperclip", "~> 4.1"
 gem "skylight"
+gem 'bcrypt-ruby', '~> 3.0.0'
 group :development do
 gem 'spring'
 #gem 'foreman'
