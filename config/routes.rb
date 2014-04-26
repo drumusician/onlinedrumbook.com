@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'users/new'
+
+  get 'users/create'
+
+  get 'users/show'
+
   resources :techniques
 
   resources :fills
@@ -6,6 +12,8 @@ Rails.application.routes.draw do
   resources :grooves
 
   resources :lesson_contents
+
+  resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
