@@ -1,11 +1,7 @@
 <h1>Grooves</h1>
 <%= link_to 'Add Groove', new_groove_path %>
-<p><% @grooves.each do |g| %>
-  <ul>
-    <li>id: <%= g.id %></li>
+  <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid 5">
+<%= @grooves.each do |g| %>
     <li>image: <%= image_tag g.image.url(:thumb) %></li>
-    <li>length: <%= g.length %></li>
-    <li>audio: <%= g.audio %></li>
-    <li>video: <%= g.video %></li>
+<% end %>
    </ul>
-<% end %></p>

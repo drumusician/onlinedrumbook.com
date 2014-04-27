@@ -16,9 +16,10 @@ class GroovesController < ApplicationController
     
     if @groove.save
       flash[:notice] = "Groove has been saved!"
-      redirect_to @groove
+      redirect_to grooves_path
     else
-      #nothing yet
+      flash[:error] = "Something went wrong"
+      render :new
     end
   end
 
