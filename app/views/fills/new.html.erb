@@ -1,5 +1,5 @@
-<h2>Add a new groove below</h2>
-<%= simple_form_for @groove, :html => {:multipart => true } do |groove| %>
+<h2>Add a new fill below</h2>
+<%= simple_form_for @fill, :html => {:multipart => true } do |groove| %>
   <%= groove.label 'Select image file' %>
   <%= groove.file_field :image %>
   <%= groove.association :note_values, as: :check_boxes, label_method: :value, boolean_style: :inline %>

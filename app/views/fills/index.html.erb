@@ -1,0 +1,7 @@
+<h2>Fills</h2>
+<h3><%= link_to 'Add Fill', new_fill_path %></h3>
+  <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-5">
+    <% @fills.each do |fill| %>
+    <li><%= image_tag fill.image(:medium) %> </li>
+    <% end %>
+  </ul>
