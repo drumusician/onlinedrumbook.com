@@ -1,7 +1,7 @@
 <h2>Add a new groove below</h2>
 <%= simple_form_for @groove, :html => {:multipart => true } do |groove| %>
   <%= groove.file_field :image, label: 'Add image file of the groove' %>
-  <%= groove.association :note_values, as: :check_boxes, label: :value %>
+  <%= groove.association :note_values, as: :check_boxes, label_method: :value %>
   <%= groove.input :length %>
   <%= groove.input :audio %>
   <%= groove.input :video %>
