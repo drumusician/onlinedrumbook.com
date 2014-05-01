@@ -1,11 +1,11 @@
 <h2>Add a new fill below</h2>
-<%= simple_form_for @fill, :html => {:multipart => true } do |groove| %>
-  <%= groove.label 'Select image file' %>
-  <%= groove.file_field :image %>
-  <%= groove.association :note_values, as: :check_boxes, label_method: :value, boolean_style: :inline %>
-  <%= groove.input :length, label: 'Length in bars or beats' %>
-  <%= groove.input :audio, label: 'Add a link to a soundcloud file' %>
-  <%= groove.input :video, label: 'Add a youtube link below' %>
-  <%= groove.button :submit %>
+<%= simple_form_for @fill, :html => {:multipart => true } do |fill| %>
+  <%= fill.label 'Select image file' %>
+  <%= fill.file_field :image %>
+  <%= fill.association :note_values, as: :check_boxes, label_method: :value, boolean_style: :inline %>
+  <%= fill.input :length, label: 'Length in bars or beats' %>
+  <%= fill.input :audio, label: 'Add a link to a soundcloud file' %>
+  <%= fill.input :video, label: 'Add a youtube link below' %>
+  <%= fill.button :submit %>
 <% end %>
 
