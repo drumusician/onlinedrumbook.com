@@ -1,0 +1,17 @@
+<table>
+  <thead>
+    <tr>
+      <th width="200">Image</th>
+      <th width="150">Type</th>
+    </tr>
+  </thead>
+  <tbody>
+<% @lesson_contents.each do |content| %>
+    <tr>
+      <td><%= image_tag content.image(:thumb) %></td>
+      <td><%= content.type %></td>
+    </tr>
+    
+  <% end %>
+  </tbody>
+</table>

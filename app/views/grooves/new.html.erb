@@ -2,7 +2,7 @@
 <%= simple_form_for @groove, :html => {:multipart => true } do |groove| %>
   <%= groove.label 'Select image file' %>
   <%= groove.file_field :image %>
-  <%= groove.association :note_values, as: :check_boxes, label_method: :value, boolean_style: :inline %>
+  <%# <%= groove.association :note_values, as: :check_boxes, label_method: :value, boolean_style: :inline %>
   <%= groove.input :length, label: 'Length in bars or beats' %>
   <%= groove.input :audio, label: 'Add a link to a soundcloud file' %>
   <%= groove.input :video, label: 'Add a youtube link below' %>

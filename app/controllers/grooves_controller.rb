@@ -1,4 +1,6 @@
 class GroovesController < ApplicationController
+  # before_create: :associate_note_values
+
   def index
     @grooves = Groove.all
   end
@@ -27,5 +29,8 @@ class GroovesController < ApplicationController
 
   def groove_params
     params.require(:groove).permit(:image, :length, :audio, :video)
+  end
+
+  def associate_note_values 
   end
 end
