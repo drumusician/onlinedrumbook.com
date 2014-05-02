@@ -3,6 +3,7 @@
     <tr>
       <th width="200">Image</th>
       <th width="150">Content Type</th>
+      <th width="150">Added By</th>
     </tr>
   </thead>
   <tbody>
@@ -10,6 +11,7 @@
     <tr>
       <td><%= image_tag content.image(:thumb) %></td>
       <td><%= content.type %></td>
+      <td><%= content.user.username if content.user %></td>
     </tr>
     
   <% end %>

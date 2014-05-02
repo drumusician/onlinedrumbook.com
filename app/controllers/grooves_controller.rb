@@ -1,5 +1,5 @@
 class GroovesController < ApplicationController
-  # before_create: :associate_note_values
+  before_action :require_signin!, except: [:index, :show]
 
   def index
     @grooves = Groove.all
@@ -15,7 +15,8 @@ class GroovesController < ApplicationController
 
   def create
     @groove = Groove.new( groove_params )
-    
+    @groove.user = current_user
+
     if @groove.save
       flash[:notice] = "Groove has been saved!"
       redirect_to grooves_path

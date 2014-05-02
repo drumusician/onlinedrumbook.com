@@ -4,4 +4,5 @@ class LessonContent < ActiveRecord::Base
   has_and_belongs_to_many :note_values
 
   attr_accessor :note_values
+  belongs_to :user
 end

@@ -1,4 +1,5 @@
 class FillsController < ApplicationController
+  before_action :require_signin!, except: [:index, :show]
 
   def index
     @fills = Fill.all
@@ -10,6 +11,7 @@ class FillsController < ApplicationController
 
   def create
     @fill = Fill.new( fill_params)
+    @fill.user = current_user
 
     if @fill.save
       flash[:notice] = "Fill was succesfully saved!"
