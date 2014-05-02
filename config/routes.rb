@@ -1,10 +1,4 @@
 Rails.application.routes.draw do
-  get 'users/new'
-
-  get 'users/create'
-
-  get 'users/show'
-
   resources :techniques
 
   resources :fills
@@ -14,6 +8,10 @@ Rails.application.routes.draw do
   resources :lesson_contents
 
   resources :users
+
+  get '/signin', to: 'sessions#new'
+
+  post '/signin', to: 'sessions#create'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
